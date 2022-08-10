@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Oligodendroglioma recurrence and survival prediction using random forest method</title>
+</head>
+<body>
+<center>
+	<h3 style="line-height:5%">Oligodendroglioma recurrence and survival prediction</h3> 
+	<h3 style="line-height:5%">using random forest method</h3>
+<form action="../../../cgi-bin/Glioblastoma/survivalfig.py" method="POST">
+    <table summary="Patient information" class=nonbordered>
+        <tr><td><label for="Gender"><b>Gender:</b></label>
+                <select name="Gender" id="Gender">
+                <option value=""></option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                </select>
+</td></tr>                                                               
+        <tr><td> <label for="Age"> <b>Age (year):</b></label>
+                <input type="text" name="Age" value="" title="gene" size=20 id="gene">
+
+</td></tr>                                                               
+        <tr><td><label for="EOR"><b>EOR:</b></label>
+                <select name="EOR" id="EOR">
+                <option value=""></option>
+		<option value=1>Gross Total Resection (&ge;99%)</option>
+                <option value=2>Non-GTR (&#60;99%)</option>
+
+</td></tr>                                                               
+        <tr><td><label for="Ki67"><b>Ki67:</b></label>
+                <select name="Ki67" id="Ki67">
+                <option value=""></option>
+                <option value=1>&le;3%</option>
+		<option value=2>&#62;3%</option>
+
+</td></tr>                                                               
+        <tr><td><label for="Grade"><b>Grade:</b></label>
+                <select name="Grade" id="Grade">
+                <option value=""></option>
+                <option value=2>Grade 2</option>
+                <option value=3>Grade 3</option>
+</td></tr>                                                               
+
+        <tr><td><label for="Location"><b>Location:</b></label>
+                <select name="Location" id="Location">
+                <option value=""></option>
+                <option value=1>Other lobes</option>
+                <option value=2>Multiple lobes</option>
+                <option value=3>Temporal lobe</option>
+</td></tr>                                                               
+
+        <tr><td><label for="TumorSide"><b>Tumor Side:</b></label>
+                <select name="TumorSide" id="TumorSide">
+                <option value=""></option>
+                <option value=1>Left</option>
+                <option value=2>Right</option>
+                <option value=3>Bilateral</option>
+</td></tr>                                                               
+
+         <tr><td><label for="Diameter"> <b>Diameter (mm):</b></label>
+                <input type="text" name="Diameter" value="" title="Diameter" size=20 id="Diameter">
+
+</td></tr>                                                               
+        <tr><td><label for="Chemotherapy"><b>Chemotherapy:</b></label>
+                <select name="Chemotherapy" id="Chemotherapy">
+                <option value=""></option>
+                <option value=0>No</option>
+                <option value=1>Yes</option>
+</td></tr>                                                               
+
+        <tr><td><label for="Radiotherapy"><b>Radiotherapy:</b></label>
+                <select name="Radiotherapy" id="Radiotherapy">
+                <option value=""></option>
+                <option value=0>No</option>
+                <option value=1>Yes</option>
+</td></tr>                                                               
+
+        <tr><td><label for="PolysomyStatus"><b>Polysomy Status:</b></label>
+                <select name="PolysomyStatus" id="PolysomyStatus">
+                <option value=""></option>
+                <option value=0>Without polysomy</option>
+                <option value=1>1p-polysomy or 19q-polysomy</option>
+                <option value=2>Co-polysomy</option>
+</td></tr>                                                               
+<tr><td>
+
+                <input type="submit" title="Submit" aria-label="Submit" value="Submit">
+</td></tr>
+    </table>
+</form>
+
+<p>Authors: Ethan Xu and Yuanyuan Li</p>
+
+</center>
+
+</body></html>
